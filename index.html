@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário </title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2b3e053a64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="container__global">
+        <section class="container esquerda">
+            <div class="group__title">
+                <i class="fa-solid fa-right-to-bracket fa-2x icone"></i>
+                <h2 class="title__login">Welcome!</h2>
+                <span class="subtitle__login">sign in to your account</span>   
+            </div>
+
+            <div>
+                <form>
+                    <div class="form__row">
+                        <label for="name-login">Name</label>
+                        <input type="text" id="name-login" placeholder="enter your name">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="form__row">
+                        <label for="password-login">Password</label>
+                        <input type="password" id="password-login" placeholder="enter password">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="form__row">
+                       <div class="form__chek-box">
+                           <input type="checkbox" id="remenber">
+                           <label for="remenber">remenber me?</label>
+                       </div>
+                       <a href="#">forgot password?</a>
+                    </div>
+                    <div class="form__row">
+                        <button class="btn btn__login">sing in<i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <section class="container direita">
+            <i class="fa-solid fa-circle-user"></i>
+            <h2>Create account</h2>
+            <form>
+                <div class="form__row">
+                    <label for="name-create">Name</label>
+                    <input type="text" id="name-create" placeholder="enter your name">
+                <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="form__row">
+                    <label for="email-create">E-mail</label>
+                    <input type="email" id="email-create" placeholder="enter your e-mail">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="form__row">
+                    <label for="password-login">Password</label>
+                    <input type="password" id="password-login" placeholder="enter password">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <div class="form__row">
+                    <button class="btn btn__login">Create<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </form>
+
+            <span>Or create account using social media!</span>
+            <div class="social__media">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container__global{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    height: 80vh ;
+    max-width: 400px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    padding: 40px 15px;
+
+}
+/* login */
+.esquerda{
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+}
+.group__title{
+    padding-bottom: 2rem;
+}
+.icone{
+    color: blue;
+}
+.title__login{
+    font-size: 2.5rem;
+    color: #2f2f2f;
+}
+.subtitle__login{
+    color: #2f2f2f;
+}
+
+
+
+
+
+.direita{
+    background-image: linear-gradient( 109.6deg,  rgba(116,18,203,1) 11.2%, rgba(230,46,131,1) 91.2% );
+}
