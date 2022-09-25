@@ -22,13 +22,13 @@
                 <form class="form">
                     <div class="form__row">
                         <label class="form__label" for="name-login">Name</label>
-                        <input class="form__input" type="text" id="name-login" placeholder="enter your name">
-                        <i class=" fa-solid fa-user form__icone"></i>
+                        <input class="form__input" type="text" id="name-login" placeholder="enter your name" required>
+                        <i class=" fa-solid fa-user form__icone icone"></i>
                     </div>
                     <div class="form__row">
                         <label class="form__label" for="password-login">Password</label>
-                        <input class="form__input" type="password" id="password-login" placeholder="enter password">
-                        <i class=" fa-solid fa-eye form__icone"></i>
+                        <input class="form__input" type="password" id="password-login" placeholder="enter password" required>
+                        <i class=" fa-solid fa-eye form__icone icone"></i>
                     </div>
                     <div class="form__row check-box">
                        <div class="form__chek-box">
@@ -46,26 +46,26 @@
 
 
         <section class="container direita">
-            <i class=" fa-solid fa-circle-user"></i>
+            <i class=" fa-solid fa-circle-user fa-2x"></i>
             <h2 class="titulo__direita">Create account</h2>
             <form class="form-direita">
                 <div class="form__row">
-                    <label class="form__label" for="name-create">Name</label>
-                    <input class="form__input" type="text" id="name-create" placeholder="enter your name">
-                <i class=" fa-solid fa-user form__icone"></i>
+                    <label class="form__label form__label--direita" for="name-create">Name</label>
+                    <input class="form__input" type="text" id="name-create" placeholder="enter your name" required pattern="">
+                <i class=" fa-solid fa-user form__icone icone"></i>
                 </div>
                 <div class="form__row">
-                    <label class="form__label" for="email-create">E-mail</label>
-                    <input class="form__input" type="email" id="email-create" placeholder="enter your e-mail">
-                    <i class=" fa-solid fa-envelope form__icone"></i>
+                    <label class="form__label form__label--direita" for="email-create">E-mail</label>
+                    <input class="form__input" type="email" id="email-create" placeholder="enter your e-mail" required>
+                    <i class=" fa-solid fa-envelope form__icone icone"></i>
                 </div>
                 <div class="form__row">
-                    <label class="form__label" for="password-login">Password</label>
-                    <input class="form__input" type="password" id="password-login" placeholder="enter password">
-                    <i class=" fa-solid fa-eye form__icone"></i>
+                    <label class="form__label form__label--direita" for="password-login">Password</label>
+                    <input class="form__input" type="password" id="password-login" placeholder="enter password" required>
+                    <i class=" fa-solid fa-eye form__icone icone"></i>
                 </div>
                 <div class="form__row--buttom">
-                    <button class="btn btn__login">Create<i class=" fa-solid fa-arrow-right"></i></button>
+                    <button class="btn btn__create">Create<i class=" fa-solid fa-arrow-right"></i></button>
                 </div>
             </form>
 

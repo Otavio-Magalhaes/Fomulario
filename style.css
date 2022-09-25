@@ -8,7 +8,7 @@ body{
     align-items: center;
     display: flex;
     justify-content: center;
-    padding-top: 10vh;
+    padding-top: 1vh;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -18,12 +18,15 @@ body{
 }
 
 .container{
-    height: 80vh ;
-    max-width: 500px;
+    min-height: 80vh ;
+    width: 400px;
     border-radius: 5px;
     text-align: center;
     padding: 40px 15px;
 
+}
+.icone{
+    color: blue;
 }
 
 /* login */
@@ -35,9 +38,6 @@ body{
     padding-bottom: 2rem;
 }
 
-.icone{
-    color: blue;
-}
 
 .title__login{
     font-size: 2.5rem;
@@ -59,7 +59,7 @@ body{
 
 .form__label{
     display: block;
-    font-size: 10px;
+    font-size: 12px;
     color: #2f2f2f;
     text-align: left;
 }
@@ -68,10 +68,22 @@ body{
     width: 100%;
     height: 40px;
     border: none;
-    background-color: lightgray;
     border-radius: 5px;
-    padding: 0 40px 0 10px;
+
+    background: #f1f1f1 no-repeat;
+    transition: 100ms all linear 0s;
+    
+    background-image: linear-gradient( 109.6deg,  rgba(116,18,203,1) 11.2%, rgba(230,46,131,1) 91.2% );
+    background-size: 0 2px, 100% 1px;
+    background-position: 50% 100%, 50% 100%;
+    
     margin-bottom: 15px;
+    transition:  0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    padding: 0 40px 0 10px;
+}
+.form__input:focus{
+    background-size: 100% 2px, 100% 1px;
+    outline: none;
 }
 
 .form__icone{
@@ -85,10 +97,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
-
+.input__checkbox{
+    border: 1px solid #e2e2e2;
+    margin-right: 2px;
+}
 .form__chek-box{
     display: flex;
+    
 }
 .label-checkbox{
     font-size: 15px;
@@ -101,10 +118,8 @@ body{
 
 .btn {
     align-items: center;
-    background: #4d61fc;
     border-radius: 3px;
     border: 0;
-    color: white;
     cursor: pointer;
     display: flex;
     font-size: 16px;
@@ -112,7 +127,12 @@ body{
     transition: .2s;
 }
 
-.btn:hover{
+.btn__login{
+    background: #4d61fc;
+    color: white; 
+}
+
+.btn__login:hover{
     background: #2036de;
     transform: translateY(-2px);
 }
@@ -140,4 +160,20 @@ body{
 }
 .fa-brands{
     margin-left: 10px;
+}
+
+.form__label--direita{
+    color: white;
+}
+
+.btn__create:hover{
+    background-color: lightgray;
+    transform: translateY(-2px);
+}
+
+.fa-arrow-right{
+    margin-left: 10px;
+}
+.fa-circle-user{
+    color: white;
 }
